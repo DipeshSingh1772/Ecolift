@@ -15,6 +15,12 @@ data class PostPerson (
     @ColumnInfo(name = "Destination")
     val Destination:String,
 
+    @ColumnInfo(name = "Data")
+    val Date:Long = 0,
+
+    @ColumnInfo(name = "Time")
+    val Time:Long = 0,
+
     @ColumnInfo(name = "Name")
     val Name:String,
 
