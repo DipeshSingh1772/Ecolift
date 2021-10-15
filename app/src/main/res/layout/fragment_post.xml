@@ -3,285 +3,298 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".PostFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin">
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/pickup_text_lebel"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="@dimen/margin"
-            android:hint="Pickup"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/green_dot"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/pickup_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="text"
-                android:singleLine="true" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <ImageView
-            android:id="@+id/green_dot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pickup_dot"
-            app:layout_constraintBottom_toBottomOf="@+id/pickup_text_lebel"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/pickup_text_lebel" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/destination_text_lebel"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:hint="Destination"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/red_dot"
-            app:layout_constraintTop_toBottomOf="@+id/pickup_text_lebel">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/destination_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="text"
-                android:singleLine="true" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <ImageView
-            android:id="@+id/red_dot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/destination_dot"
-            app:layout_constraintBottom_toBottomOf="@+id/destination_text_lebel"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pickup_text_lebel" />
-
-        <ImageView
-            android:id="@+id/date_pick_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/date_icon"
-            app:layout_constraintBottom_toBottomOf="@+id/date_btn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/destination_text_lebel" />
-
-        <Button
-            android:id="@+id/date_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            android:text="Date"
-            app:layout_constraintStart_toEndOf="@+id/date_pick_icon"
-            app:layout_constraintTop_toBottomOf="@+id/destination_text_lebel" />
-
-        <ImageView
-            android:id="@+id/time_pick_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="112dp"
-            android:src="@drawable/time_icon"
-            app:layout_constraintBottom_toBottomOf="@+id/time_picker"
-            app:layout_constraintStart_toEndOf="@+id/date_btn"
-            app:layout_constraintTop_toTopOf="@+id/time_picker"
-            app:layout_constraintVertical_bias="0.166" />
-
-        <Button
-            android:id="@+id/time_picker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:text="Time"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/time_pick_icon"
-            app:layout_constraintTop_toBottomOf="@+id/destination_text_lebel" />
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/post_name_labele"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:hint="Name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/name_icon"
-            app:layout_constraintTop_toBottomOf="@+id/date_btn">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/post_name_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="text"
-                android:singleLine="true" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <ImageView
-            android:id="@+id/name_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/person_icon"
-            app:layout_constraintBottom_toBottomOf="@+id/post_name_labele"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/post_name_labele" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/code_labele"
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:hint="+91"
-            app:layout_constraintStart_toEndOf="@+id/phone_icon"
-            app:layout_constraintTop_toBottomOf="@+id/post_name_labele">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/code_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="text"
-                android:singleLine="true" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/phone_text_label"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="16dp"
-            android:hint="Mobile no."
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/code_labele"
-            app:layout_constraintTop_toBottomOf="@+id/post_name_labele">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/phone_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="text"
-                android:singleLine="true" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <ImageView
-            android:id="@+id/phone_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/phone_icon"
-            app:layout_constraintBottom_toBottomOf="@+id/code_labele"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/post_name_labele" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/mail_label"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:hint="Email"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/mail_icon"
-            app:layout_constraintTop_toBottomOf="@+id/phone_text_label">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/mail_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="text"
-                android:singleLine="true" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <ImageView
-            android:id="@+id/mail_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/mail_icon"
-            app:layout_constraintBottom_toBottomOf="@+id/mail_label"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/mail_label" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/seats_label"
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:hint="Seats"
-            app:layout_constraintStart_toEndOf="@+id/seat_icon"
-            app:layout_constraintTop_toBottomOf="@+id/mail_label">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/seats_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="text"
-                android:singleLine="true" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <ImageView
-            android:id="@+id/seat_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/group_icon"
-            app:layout_constraintBottom_toBottomOf="@+id/seats_label"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mail_label" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/fare_label"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:hint="Fare Amount"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/fare_icon"
-            app:layout_constraintTop_toBottomOf="@+id/mail_label">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/fare_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="text"
-                android:singleLine="true" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <ImageView
-            android:id="@+id/fare_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:src="@drawable/money_icon"
-            app:layout_constraintBottom_toBottomOf="@+id/fare_label"
-            app:layout_constraintStart_toEndOf="@+id/seats_label"
-            app:layout_constraintTop_toTopOf="@+id/fare_label" />
-
-        <Button
-            android:id="@+id/post_btn"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Post"
-            app:layout_constraintTop_toBottomOf="@+id/seats_label" />
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            android:background="@drawable/post_form_background"
+            android:orientation="horizontal">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pickup_dot"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:inputType="text"
+                android:hint="Pickup"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            android:background="@drawable/post_form_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/destination_dot"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:inputType="text"
+                android:hint="Destination"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/post_form_background"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/date_icon"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:inputType="text"
+                    android:hint="Date"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/post_form_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/time_icon"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:inputType="text"
+                    android:hint="Time"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            android:background="@drawable/post_form_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/person_icon"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:inputType="text"
+                android:hint="Name"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            android:background="@drawable/post_form_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone_icon"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:inputType="text"
+                android:hint="Mobile No."
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            android:background="@drawable/post_form_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mail_icon"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:inputType="text"
+                android:hint="Email"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/post_form_background"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group_icon"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:inputType="text"
+                    android:hint="Seats"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/post_form_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/money_icon"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/pickup_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:inputType="text"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Amount"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAllCaps="true"
+                android:text="Post" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
 </ScrollView>
