@@ -30,6 +30,9 @@ data class PostPerson (
     @ColumnInfo(name = "Mobile no.")
     val Mobile:Int,
 
+    @ColumnInfo(name = "Email")
+    val Email:String,
+
     @ColumnInfo(name = "Fare Amount per person")
     val Amount: Int,
 
