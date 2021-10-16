@@ -1,5 +1,6 @@
 package com.example.ecolift
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.ecolift.databinding.FragmentMainBinding
+import android.widget.Toast
+
+import android.view.MotionEvent
+import android.view.View.OnTouchListener
 
 
 class MainFragment : Fragment() {
@@ -32,6 +37,5 @@ class MainFragment : Fragment() {
             findNavController().navigate(R.id.action_mainFragment_to_postFragment)
         }
     }
-
 
 }
