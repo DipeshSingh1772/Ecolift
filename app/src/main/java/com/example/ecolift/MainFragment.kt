@@ -25,12 +25,12 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-//        binding.BookRideBtn.setOnClickListener{
-//            findNavController().navigate(R.id.action_mainFragment_to_searchFragment)
-//        }
-//        binding.PostRideBtn.setOnClickListener{
-//            findNavController().navigate(R.id.action_mainFragment_to_postFragment)
-//        }
+        binding.BookRideBtn.setOnClickListener{
+            findNavController().navigate(R.id.action_mainFragment_to_searchFragment)
+        }
+        binding.PostRideBtn.setOnClickListener{
+            findNavController().navigate(R.id.action_mainFragment_to_postFragment)
+        }
     }
 
 
