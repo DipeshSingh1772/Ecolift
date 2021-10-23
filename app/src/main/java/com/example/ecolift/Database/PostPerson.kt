@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity (tableName = "post_person")
-data class PostPerson (
+data class PostPerson(
     @PrimaryKey(autoGenerate = true)
     val id:Int = 0,
 
@@ -16,7 +16,7 @@ data class PostPerson (
     val Destination:String,
 
     @ColumnInfo(name = "Data")
-    val Date:Long = 0,
+    val Date: Long = 0,
 
     @ColumnInfo(name = "Time")
     val Time:Long = 0,
@@ -27,8 +27,8 @@ data class PostPerson (
     @ColumnInfo(name = "Seats")
     var Seats:Int,
 
-    @ColumnInfo(name = "Mobile no.")
-    val MobileNo:Int,
+    @ColumnInfo(name = "MobileNo")
+    val MobileNo:String,
 
     @ColumnInfo(name = "Email")
     val Email:String,
@@ -36,7 +36,7 @@ data class PostPerson (
     @ColumnInfo(name = "Amount")            //Fare Amount per person
     val Amount: Int,
 
-    @ColumnInfo(name = "Car")
-    val Car:String
+//    @ColumnInfo(name = "Car")
+//    val Car:String
 
 )

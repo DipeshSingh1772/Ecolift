@@ -21,7 +21,13 @@
         android:id="@+id/postFragment"
         android:name="com.example.ecolift.PostFragment"
         android:label="fragment_post"
-        tools:layout="@layout/fragment_post" />
+        tools:layout="@layout/fragment_post" >
+        <action
+            android:id="@+id/action_postFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.example.ecolift.SearchFragment"

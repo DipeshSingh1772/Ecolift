@@ -28,6 +28,7 @@
                 android:layout_gravity="center"/>
 
             <EditText
+                android:id="@+id/pickup_text"
                 android:layout_width="0dp"
                 android:layout_weight="7"
                 android:layout_marginLeft="10dp"
@@ -55,6 +56,7 @@
                 android:layout_gravity="center"/>
 
             <EditText
+                android:id="@+id/destination_text"
                 android:layout_width="0dp"
                 android:layout_weight="7"
                 android:layout_height="match_parent"
@@ -88,6 +90,7 @@
                     android:layout_gravity="center"/>
 
                 <EditText
+                    android:id="@+id/date_text"
                     android:layout_width="0dp"
                     android:layout_weight="7"
                     android:layout_height="match_parent"
@@ -116,6 +119,7 @@
                     android:layout_gravity="center"/>
 
                 <EditText
+                    android:id="@+id/time_text"
                     android:layout_width="0dp"
                     android:layout_weight="7"
                     android:layout_height="match_parent"
@@ -147,6 +151,7 @@
                 android:layout_gravity="center"/>
 
             <EditText
+                android:id="@+id/name_text"
                 android:layout_width="0dp"
                 android:layout_weight="7"
                 android:layout_height="match_parent"
@@ -174,6 +179,7 @@
                 android:layout_gravity="center"/>
 
             <EditText
+                android:id="@+id/mobileno_text"
                 android:layout_width="0dp"
                 android:layout_weight="7"
                 android:layout_height="match_parent"
@@ -201,6 +207,7 @@
                 android:layout_gravity="center"/>
 
             <EditText
+                android:id="@+id/email_text"
                 android:layout_width="0dp"
                 android:layout_weight="7"
                 android:layout_height="match_parent"
@@ -234,6 +241,7 @@
                     android:layout_gravity="center"/>
 
                 <EditText
+                    android:id="@+id/seat_text"
                     android:layout_width="0dp"
                     android:layout_weight="7"
                     android:layout_height="match_parent"
@@ -262,7 +270,7 @@
                     android:layout_gravity="center"/>
 
                 <EditText
-                    android:id="@+id/pickup_text"
+                    android:id="@+id/amount_text"
                     android:layout_width="0dp"
                     android:layout_weight="7"
                     android:layout_height="match_parent"
@@ -286,6 +294,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/post_btn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAllCaps="true"
