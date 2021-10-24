@@ -19,7 +19,7 @@ data class PostPerson(
     val Date: Long = 0,
 
     @ColumnInfo(name = "Time")
-    val Time:Long = 0,
+    val Time:String,
 
     @ColumnInfo(name = "Name")
     val Name:String,
