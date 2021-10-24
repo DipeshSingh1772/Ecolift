@@ -28,12 +28,12 @@ data class PostPerson (
     var Seats:Int,
 
     @ColumnInfo(name = "Mobile no.")
-    val Mobile:Int,
+    val MobileNo:Int,
 
     @ColumnInfo(name = "Email")
     val Email:String,
 
-    @ColumnInfo(name = "Fare Amount per person")
+    @ColumnInfo(name = "Amount")            //Fare Amount per person
     val Amount: Int,
 
     @ColumnInfo(name = "Car")

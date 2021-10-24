@@ -15,15 +15,15 @@ interface PostDao {
     @Update
     suspend fun update(person: PostPerson)
 
-    @Delete
-    suspend fun delete(person: PostPerson)
+//    @Delete
+//    suspend fun delete(person: PostPerson)
 
     @Query(value = "DELETE FROM post_person")
-    suspend fun deleteAllStudents()
+    suspend fun deleteAllOwner()
 
-    @Query(value = "SELECT * FROM post_person")
-    fun getAllStudentData(): LiveData<List<PostPerson>>
+//    @Query(value = "SELECT * FROM post_person")
+//    fun getAllOwner(): LiveData<List<PostPerson>>
 
-    @Query("SELECT * FROM post_person WHERE id = :id")
-    fun getStudent(id: Int): LiveData<PostPerson>
+    @Query("SELECT * FROM post_person WHERE id = :destination")
+    fun getMatchedRide(destination: String): LiveData<PostPerson>
 }
