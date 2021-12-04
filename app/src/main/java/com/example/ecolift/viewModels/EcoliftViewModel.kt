@@ -25,6 +25,7 @@ class EcoliftViewModel(private val postDao:PostDao):ViewModel() {
         postDao.getMatchedRide(destination)
     }
 
+
 }
 
 

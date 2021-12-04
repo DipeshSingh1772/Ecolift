@@ -7,16 +7,12 @@
     <string name="red_indicator">red indicator</string>
     <string name="destination">Destination</string>
     <string name="date">Date</string>
-    <string name="date">Date</string>
-    <string name="time">Time</string>
     <string name="time">Time</string>
     <string name="person">Person</string>
     <string name="name">Name</string>
     <string name="phone">Phone</string>
     <string name="mobile_no">Mobile No.</string>
     <string name="email">Email</string>
-    <string name="email">Email</string>
-    <string name="seats">Seats</string>
     <string name="seats">Seats</string>
     <string name="amount">Amount</string>
     <string name="Amount">Amount</string>
