@@ -1,15 +1,16 @@
-package com.example.ecolift
+package com.example.ecolift.StartActivities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.example.ecolift.Data_Classes.LoginRequest
 import com.example.ecolift.Data_Classes.LoginResponse
+import com.example.ecolift.MainActivity
+import com.example.ecolift.R
 import com.example.ecolift.Retrofit.ServiceBuilder
 import com.example.ecolift.Retrofit.SessionManager
 import retrofit2.Call
